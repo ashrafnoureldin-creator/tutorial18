@@ -1,15 +1,5 @@
 #!/bin/bash
 
-# --------------------------------------------------
-# Convert decimal number to 8-bit binary
-# --------------------------------------------------
-
-decimal_to_binary()
-{
-    local num=$1
-    local binary=""
-    local temp=$num
-
     for weight in 128 64 32 16 8 4 2 1
     do
         if (( temp >= weight ))

@@ -27,25 +27,6 @@ decimal_to_binary()
 
 # --------------------------------------------------
 # Convert register number to 2-bit binary
-# --------------------------------------------------
-
-register_to_binary()
-{
-    local reg=$1
-
-    if [ "$reg" -eq 0 ]
-    then
-        echo "00"
-    elif [ "$reg" -eq 1 ]
-    then
-        echo "01"
-    elif [ "$reg" -eq 2 ]
-    then
-        echo "10"
-    else
-        echo "11"
-    fi
-}
 
 
 # ==================================================
